@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "NapiNode Stealth Proxy",
+  "version": "1.0.0",
+  "description": "1-Click Unblockable Residential Stealth Network. Bypass restrictions instantly.",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Open Command Center"
+  },
+  "permissions": [
+    "proxy",
+    "storage",
+    "webRequest",
+    "webRequestAuthProvider"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
